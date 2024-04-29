@@ -26,6 +26,11 @@ import webbrowser
 import os
 import sys
 
+import mimetypes
+mimetypes.add_type('application/javascript', '.js')
+mimetypes.add_type('text/css', '.css')
+
+
 
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
